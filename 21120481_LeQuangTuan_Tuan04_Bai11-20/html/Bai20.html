@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+    li{
+       list-style-type: none;
+       color: purple;
+       text-shadow: 0px 3px 3px blue;
+       border: 2px dashed #fff;
+       width: 100px;
+       background-color: #0d90df;
+       font-weight: bold;
+       box-shadow: 0 0 0 4px #0d90df , 2px 8px 6px 4px rgba(10, 10, 0, .5);
+       text-align: center;
+       padding: 10px;
+       border-radius: 10px;
+       margin: 10px 20px;
+    }
+    li{
+       position: relative;
+    }
+    li ul {
+       position: absolute;
+       top: -11px;
+       left: 75px;
+       display: none;
+   }
+   li:hover ul
+   {
+       display: block;
+   }
+
+   li:hover {
+       color: black;
+       padding: 12px;
+       transition: all 0.35s ease 0s;
+   }
+
+  </style>
+</head>
+<body>
+   <center>
+     <div class="wrap">
+        <ul>
+           <li class="stitched"> Home</li>
+           <li class="stitched"> Services</li>
+           <li class="stitched"> Product
+                <ul>
+                    <li>Photography</li>
+                    <li>Web & User</li>
+                    <li>Illustration</li>
+                </ul>
+           </li>
+           <li class="stitched">Contact</li>
+       </ul>
+      </div>
+   </center>
+   
+</body>
+</html>

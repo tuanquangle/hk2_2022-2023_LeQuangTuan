@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .image-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border: solid 1px;
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 10px;
+        }
+
+        .image-container:hover .image {
+            transform: scale(1.2);
+        }
+
+        .image-container:hover .description {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <div class="image-container">
+            <img src="../img/1670191225_742_Hinh-Anh-Meme-Cheems-Tau-He-Cuc-Manh-Cuoi-Sai.jpg" alt="Image 1"
+                class="image">
+            <div class="description">Hinh anh meme Cheems</div>
+        </div>
+        <div class="image-container">
+            <img src="../img/2.png" alt="Image 2" class="image">
+            <div class="description">Hinh khan tam hoat hinh</div>
+        </div>
+        <div class="image-container">
+            <img src="../img/Ghe.png" alt="Image 3" class="image">
+            <div class="description">Hinh cai ghe hoat hinh</div>
+        </div>
+        <div class="image-container">
+            <img src="../img/Nuocmatnhuthan.png" alt="Image 4" class="image">
+            <div class="description">Hinh nuoc mat nu</div>
+        </div>
+    </div>
+</body>
+
+</html>
